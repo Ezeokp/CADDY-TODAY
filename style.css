@@ -1,0 +1,354 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Luxury font for headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navigation */
+header {
+  background-color: #ffe6f2; /* soft pink */
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #d6336c; /* deeper pink */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d6336c;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ffe6f2 0%, #fff 100%);
+}
+
+.hero-content {
+  flex: 1 1 400px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #d6336c;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d6336c;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b52a5b;
+}
+
+/* Hero Video */
+.hero-video {
+  flex: 1 1 600px; /* increased size */
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-video video {
+  width: 100%;
+  max-width: 1000px; /* larger maximum size */
+  height: auto;
+  border-radius: 10px;
+  animation: zoomIn 1s ease-out;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.4em;
+  margin-bottom: 40px;
+  color: #d6336c;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ffe6f2;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+/* FAQ Preview Section */
+.faq-preview {
+  background-color: #fff0f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-preview h2 {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #d6336c;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.4em;
+  color: #d6336c;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #d6336c;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #d6336c;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #b52a5b;
+}
+
+/* Coming Soon Section (Products Page) */
+.coming-soon {
+  padding: 80px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+.coming-soon h1 {
+  font-size: 2.6em;
+  margin-bottom: 20px;
+  color: #d6336c;
+  animation: fadeIn 1s ease;
+}
+
+.waitlist-form {
+  margin-top: 30px;
+}
+
+.waitlist-form input {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+}
+
+.waitlist-form button {
+  padding: 12px 20px;
+  border: 1px solid #d6336c;
+  background-color: #d6336c;
+  color: #fff;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.waitlist-form button:hover {
+  background-color: #b52a5b;
+}
+
+/* FAQ Section (Products Page) */
+.faq {
+  padding: 60px 20px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  color: #d6336c;
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ffe6f2;
+  padding-bottom: 15px;
+}
+
+.faq-item h3 {
+  font-size: 1.4em;
+  color: #d6336c;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffe6f2;
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Hero Video Section */
+.hero-video {
+  flex: 1 1 600px; /* increased container size */
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8; /* temporary background for debugging */
+  min-height: 350px; /* ensure container is visible */
+}
+
+.hero-video video {
+  width: 100%;
+  max-width: 1000px; /* larger maximum width */
+  height: auto;
+  border-radius: 10px;
+  animation: zoomIn 1s ease-out;
+}
+
+/* Increase feature card image width */
+..card {
+  overflow: hidden; /* Ensures the container does not grow with the image */
+}
+.card img {
+  width: 100%; /* Makes the image fill the container's width */
+  transform: scale(1.2); /* Scales the image up by 20% */
+  transition: transform 0.3s ease;
+}
+
+
+/* Constrain the hero video height */
+.hero-video video {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 500px; /* set a maximum height to shorten the video display */
+  object-fit: cover; /* ensures the video fills the container without distortion */
+  border-radius: 10px;
+  animation: zoomIn 1s ease-out;
+}
